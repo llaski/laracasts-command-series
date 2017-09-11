@@ -11,6 +11,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use ZipArchive;
 
 class NewCommand extends Command {
+
     private $client;
 
     public function __construct(ClientInterface $client)
@@ -19,7 +20,6 @@ class NewCommand extends Command {
 
         parent::__construct();
     }
-
 
     public function configure()
     {
